@@ -19,4 +19,5 @@ public class Quiz {
     private Long id;
     private String name;
     private int score;
+    private String reponse ;
 }
