@@ -11,13 +11,17 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Quiz {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private int score;
     private String reponse ;
+
+    public Quiz(Long id,String name, int score, String reponse) {
+        this.id=id;
+        this.name = name;
+        this.score = score;
+        this.reponse = reponse;
+    }
 }
