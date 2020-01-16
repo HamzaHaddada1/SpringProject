@@ -18,6 +18,9 @@ public class UserService {
     public User ajouterUser(User user){
         return userRepository.save(user);
     }
+    public String hello(String s){
+        return s;
+    }
 
     public boolean supprimerUser(Long  id){
        return userRepository.deleteUserById(id);
